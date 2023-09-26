@@ -7,3 +7,26 @@ Syntax:
 
 - cd contact-app
 - npm start
+
+# JSX (javascript XML) - Combination for javascript and HTML
+
+class as innerhtml -> is called as className in JSX
+
+# For Semantic UI
+
+# Link:
+https://react.semantic-ui.com/usage/#css
+
+npm install --save semantic-ui-react
+npm install --save semantic-ui-css
+
+- Then Import it in Component:
+import 'semantic-ui-css/semantic.min.css';
+
+PROPS: Pass data from parents to child
+- passing data as property (varibale in component)
+
+
+# Adding inline style in JSX:
+We usually write margin-top or margin-bottom (with hyphen)
+But in JSX we use amelCase: marginTop with {{}}
