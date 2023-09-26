@@ -1,0 +1,9 @@
+# To create React App:
+
+- npx create-react-app contact-app
+
+Syntax:
+- npx create-react-app (App name)
+
+- cd contact-app
+- npm start
