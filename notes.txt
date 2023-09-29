@@ -8,6 +8,8 @@ Syntax:
 - cd contact-app
 - npm start
 
+#### After npm install uuidv4 >> npm install util ######
+
 # JSX (javascript XML) - Combination for javascript and HTML
 
 class as innerhtml -> is called as className in JSX
@@ -30,3 +32,17 @@ PROPS: Pass data from parents to child
 # Adding inline style in JSX:
 We usually write margin-top or margin-bottom (with hyphen)
 But in JSX we use amelCase: marginTop with {{}}
+
+
+# State in Class component:
+if we want to update the state then use setState
+
+if we want to pass data from Parent to child : use props
+and for child to Parent we can use function as a props
+
+# React Hooks:
+{useState, useEffect}
+
+useEffect:
+whenever the value changes, it helps us to render the conponent again.
+
