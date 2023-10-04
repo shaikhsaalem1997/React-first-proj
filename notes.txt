@@ -46,3 +46,16 @@ and for child to Parent we can use function as a props
 useEffect:
 whenever the value changes, it helps us to render the conponent again.
 
+# ROUTING
+npm install react-router-dom --save
+
+# NOTE:
+We add "{}" in Import section only bcoz if is not a default export component
+Eg: 
+import {link} from 'react-router-dom' >> Link is not default export
+import ContactList from './ContactList' >> ContactList is default export (written at end)
+
+
+
+# impoertant links
+https://github.com/dmalvia/React_Tutorial_Contact_Manager_App/blob/code-refactor/src/components/App.css

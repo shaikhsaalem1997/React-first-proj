@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { BrowserRouter as Rounter, Switch, Route } from "react-router-dom";
 import { v4 } from "uuid";
 import "./App.css";
 import Header from "./Header";
 import AddContact from "./AddContact";
 import ContactList from "./ContactList";
+import ContactDetail from "./ContactDetail";
 
 function App() {
   const LOCAL_STORAGE_KEY = "contacts";
@@ -32,8 +34,29 @@ function App() {
   return (
     <div className="ui container">
       <Header />
-      <AddContact addContactHandler={addContactHandler} />
-      <ContactList contacts={contacts} getContactId={removeContactHandler}/>
+      <Rounter>
+        <Switch>
+          <Route
+            path="/"
+            exact
+            render={(props) => (
+              <ContactList
+                {...props}
+                contacts={contacts}
+                getContactId={removeContactHandler}
+              />
+            )}
+          ></Route>
+          <Route
+            path="/add"
+            exact
+            render={(props) => (
+              <AddContact {...props} addContactHandler={addContactHandler} />
+            )}
+          ></Route>
+          <Route path="/contact/:id" component={ContactDetail}></Route>
+        </Switch>
+      </Rounter>
     </div>
   );
 }
